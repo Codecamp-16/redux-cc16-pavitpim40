@@ -1,0 +1,2 @@
+- download chrome extension : redux dev tool
+- npm for compose with devtool

@@ -1,0 +1,2 @@
+- v2 : Action Constant
+- v3 : Combine Reducer
