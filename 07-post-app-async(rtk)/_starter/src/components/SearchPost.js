@@ -1,13 +1,20 @@
 import React from 'react';
-
+import { useDispatch } from 'react-redux';
+import { searchPost } from '../store/slices/postSlice';
 import './Form.css';
 
 const SearchPost = () => {
   //search form state
+  const dispatch = useDispatch();
+
+  // search == postId
   const [search, setSearch] = React.useState('');
   //search form submit handler
   const handleSubmit = (e) => {
     e.preventDefault();
+    // if (search !== '') dispatch(searchPost(search));
+
+    dispatch(searchPost({ postId: search }));
   };
 
   return (
